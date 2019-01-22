@@ -1,0 +1,16 @@
+Package: xgbimpute
+Title: Imputation Using XGBoost
+Version: 0.1
+Authors@R: c(
+    person("Juha", "Lehtiranta", email = "juha.lehtiranta@gmail.com", role = c("aut", "cre"))
+    )
+Author: Juha Lehtiranta [aut, cre, cph]
+Maintainer: Juha Lehtiranta <juha.lehtiranta@gmail.com>
+Description: Uses the "xgboost" package to do fast missing value imputation by extreme gradien boosting. Between the iterative model fitting, it offers the option of predictive mean matching. 
+License: GPL(>= 2)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.4.4)
+Imports: xgboost (>= 0.7.1), FNN (>= 1.1.2.2), stats (>= 3.4.4)
+RoxygenNote: 6.1.1
+Roxygen: list(markdown = TRUE)
