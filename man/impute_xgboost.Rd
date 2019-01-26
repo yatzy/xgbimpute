@@ -5,8 +5,8 @@
 \title{Fast imputation of missing values by extreme gradien boosting}
 \usage{
 impute_xgboost(mat, max_iterations = 10L, seed = NULL, verbose = 1,
-  returnOOB = FALSE, pmm_k = 0, nrounds = 40, eta = 0.4,
-  max_depth = 6, objective = "reg:linear", eval_metric = "rmse", ...)
+  pmm_k = 0, nrounds = 40, eta = 0.4, max_depth = 6,
+  objective = "reg:linear", eval_metric = "rmse", ...)
 }
 \arguments{
 \item{mat}{A \code{matrix} with missing values to impute.}
@@ -45,7 +45,7 @@ is reached or if the average out-of-bag estimate of performance stops improving.
 the second last (i.e. best) imputed matrix is returned.
 }
 \examples{
-mat = as.matrix(iris[,1:4]) 
+mat = as.matrix(iris[,1:4])
 mis_mat = generate_na(mat , 0.3)
 imp_mat = impute_xgboost(mis_mat)
 

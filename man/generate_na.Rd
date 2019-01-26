@@ -20,5 +20,5 @@ generate_na(data, p = 0.1, seed = NULL)
 Takes a data frame and replaces randomly part of the values by missing values.
 }
 \examples{
-head(generateNA(iris))
+head(generate_na(as.matrix(iris[,1:4])))
 }

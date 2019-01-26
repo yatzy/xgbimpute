@@ -18,7 +18,7 @@ with replacement from the non-missing values. Requires at least one
 non-missing value to run.
 }
 \examples{
-imputeUnivariate(c(NA, 0, 1, 0, 1))
-imputeUnivariate(c("A", "A", NA))
-imputeUnivariate(as.factor(c("A", "A", NA)))
+impute_univariate(c(NA, 0, 1, 0, 1))
+impute_univariate(c("A", "A", NA))
+impute_univariate(as.factor(c("A", "A", NA)))
 }
