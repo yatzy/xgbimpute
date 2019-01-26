@@ -13,7 +13,7 @@ one_hot_encode(dt)
 A matrix created from one hot encoded data.frame or data.table with special attributes for one_hot_decode-function
 }
 \description{
-One hot encodes a data.frame or data.table to a matrix in efficient manner. Function also adds couple of package specific attributes to returned matrix so one can pass the result throuh impute_xgboost-function to one_hot_decode-function which then knows how to reverse the one hot encoding. At this point only supported categorical column types are factor and character.
+One hot encodes a data.frame or data.table to a matrix in efficient manner. Function also adds a couple of package specific attributes to returned matrix so one can pass the result throuh impute_xgboost-function to one_hot_decode-function which then knows how to reverse the one hot encoding. At this point only supported categorical column types are factor and character.
 }
 \examples{
 
