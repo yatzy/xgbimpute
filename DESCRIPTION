@@ -1,6 +1,6 @@
 Package: xgbimpute
 Title: Imputation Using XGBoost
-Version: 0.1
+Version: 0.2
 Authors@R: c(
     person("Juha", "Lehtiranta", email = "juha.lehtiranta@gmail.com", role = c("aut", "cre"))
     )
